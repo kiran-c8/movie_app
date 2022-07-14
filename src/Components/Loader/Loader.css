@@ -1,0 +1,8 @@
+.loader{
+    background-color: #1a1a1a;
+    height: 91.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

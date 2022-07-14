@@ -1,0 +1,73 @@
+.row-post-heading {
+    font-size: 20px;
+    color: #fff;
+    padding-left: 50px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.row-post{
+    display: flex;
+    overflow-x: scroll;
+    width: 95%;
+    margin-top: 1%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-bottom: 2%;
+    color: #fff;
+}
+.card-wrapper{
+    display: flex;
+    
+}
+.row-post::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    margin-right: 25px;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform .5s linear;
+}
+.front img{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+}
+.front{
+    transform: rotateY(0deg);
+}
+.back{
+    background: #242424;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transform: rotateY(180deg);
+}
+.back-content{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    opacity: 1;
+}
+.card:hover > .front{
+    transform: rotateY(-180deg);
+}
+.card:hover > .back{
+    transform: rotateY(0deg);
+}

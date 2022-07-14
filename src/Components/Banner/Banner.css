@@ -1,0 +1,212 @@
+.carousel-container {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.carousel-wrapper {
+    display: flex;
+    width: 95%;
+    height: 450px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.carousel {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.content {
+    width: 40%;
+    height: 450px;
+    position: absolute;
+    background: linear-gradient(to right, #030b17 80%, #0c111b00);
+    overflow: hidden;
+}
+
+.movie-title {
+    color: #fff;
+    padding-left: 50px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.media-type {
+    background: transparent;
+    padding-left: 55px;
+    color: #fff;
+    margin-top: 20px;
+    text-transform: capitalize;
+
+}
+
+.movie-description {
+    color: #fff;
+    background: transparent;
+    width: 70%;
+    padding-left: 50px;
+    margin-top: 30px;
+    font-size: larger;
+    opacity: 0.8;
+}
+
+.poster {
+    width: 1500px;
+    height: 450px;
+    background-size: cover;
+    display: block;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .poster {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .carousel-container {
+        height: 350px;
+        padding: 10px 0;
+    }
+
+    .carousel-wrapper {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        height: 350px;
+    }
+
+    .content {
+        width: 50%;
+        height: 350px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .movie-title {
+        font-size: 25px;
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+
+    .media-type {
+        font-size: 15px;
+        padding-left: 15px;
+        color: #fff;
+        margin-top: 10px;
+        text-transform: capitalize;
+
+    }
+
+    .movie-description {
+        color: #fff;
+        padding-left: 15px;
+        margin-top: 10px;
+        font-size: 15px;
+        opacity: 0.8;
+    }
+
+    .poster {
+        width: 1000px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .carousel-container {
+        height: 300px;
+        padding: 10px 0;
+    }
+
+    .carousel-wrapper {
+        width: 90%;
+        height: 300px;
+    }
+
+    .content {
+        width: 50%;
+        height: 300px;
+    }
+
+    .movie-title {
+        font-size: 14px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .media-type {
+        font-size: 12px;
+        padding-left: 10px;
+        margin-top: 10px;
+
+    }
+
+    .movie-description {
+        padding-left: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+        opacity: 0.8;
+    }
+
+    .poster {
+        width: 800px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .carousel-container {
+        height: 250px;
+        padding: 10px 0;
+    }
+
+    .carousel-wrapper {
+        width: 90%;
+        height: 250px;
+    }
+
+    .content {
+        width: 60%;
+        height: 250px;
+    }
+
+    .movie-title {
+        font-size: 14px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .media-type {
+        font-size: 12px;
+        padding-left: 10px;
+        margin-top: 10px;
+
+    }
+
+    .movie-description {
+        padding-left: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+        opacity: 0.8;
+    }
+
+    .poster {
+        height: 250px;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .poster {
+        width: 400px;
+    }
+}
