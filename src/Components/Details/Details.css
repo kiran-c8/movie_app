@@ -109,7 +109,7 @@
     cursor: pointer;
     display: flex;
     overflow-x: scroll;
-    height: 250px;
+    height: 220px;
     margin-top: 15px;
 }
 .cast-section_card::-webkit-scrollbar{
@@ -118,14 +118,15 @@
 
 .cast-section_card__image{
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 200px;
+    margin-right: 15px;
 }
 
 .cast-section_card__image__poster{
     cursor: pointer;
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 200px;
     border-radius: 10px;
     margin-right: 15px;
 }
@@ -168,7 +169,7 @@
 
 .similar-movies-section_heading {
     color: #fff;
-    padding-left: 50px;
+    margin-left: 2.5%;
     text-transform: capitalize;
     margin-top: 20px;
 }

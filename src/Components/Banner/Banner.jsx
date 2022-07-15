@@ -11,13 +11,6 @@ function Banner() {
     const navigate = useNavigate();
     const [movies, setMovies] = useState([]);
 
-    // const loadData = () =>{
-    //     axios.get(trending).then((response) => {
-    //         setMovies(response.data.results)
-    //     }).catch(err => {
-    //         console.log(err);
-    //     })
-    // }
 
     useEffect(() => {
         axios.get(trending).then((response) => {
@@ -26,12 +19,6 @@ function Banner() {
             console.log(err);
         })
     }, [])
-
-    // useEffect(() => {
-    //     setTimeout(loadData, 1000);
-    //   // eslint-disable-next-line react-hooks/exhaustive-deps
-    //   }, [])
-
 
     return (
         <>

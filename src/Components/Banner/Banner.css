@@ -1,6 +1,6 @@
 .carousel-container {
     width: 100%;
-    padding: 40px 0;
+    margin-top: 1.5%;
 }
 
 .carousel-wrapper {
@@ -17,8 +17,7 @@
 .carousel {
     cursor: pointer;
     position: relative;
-    width: 100%;
-    margin-left: 20px;
+    width: 90%;
 }
 
 .content {
@@ -75,13 +74,9 @@
 @media screen and (max-width:1000px) {
     .carousel-container {
         height: 350px;
-        padding: 10px 0;
     }
 
     .carousel-wrapper {
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
         height: 350px;
     }
 
@@ -124,11 +119,9 @@
 @media screen and (max-width:800px) {
     .carousel-container {
         height: 300px;
-        padding: 10px 0;
     }
 
     .carousel-wrapper {
-        width: 90%;
         height: 300px;
     }
 
@@ -166,11 +159,9 @@
 @media screen and (max-width:600px) {
     .carousel-container {
         height: 250px;
-        padding: 10px 0;
     }
 
     .carousel-wrapper {
-        width: 90%;
         height: 250px;
     }
 

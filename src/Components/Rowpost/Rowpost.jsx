@@ -29,8 +29,8 @@ const Rowpost = (props) => {
                                     </div>
                                     <div className="back" >
                                         <div className="back-content">
-                                            <h3 style={{ marginBottom: '5px', marginTop: '20px'}}>{movies ? movie.name : ""}{movies ? movie.original_title : ""}</h3>
-                                            <p style={{ color: '#fff',opacity:'1'}}>{movies ? movie.overview : ""}</p>
+                                            <h3 className='back-content_heading'>{movies ? movie.name : ""}{movies ? movie.original_title : ""}</h3>
+                                            <p className='back-content_overview'>{movies ? movie.overview : ""}</p>
                                         </div>
                                     </div>
                                 </div>

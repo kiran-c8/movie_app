@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom'
-import { API_KEY } from '../../Constants/constants';
+import { API_KEY, baseUrl } from '../../Constants/constants';
 import { imageUrl } from '../../Constants/constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
@@ -15,19 +15,19 @@ const Details = () => {
   const [similarMovies, setSimilarmovies] = useState([]);
   const movieId = new URLSearchParams(useLocation().search).get('movieId');
   const loadData = () => {
-    axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}&language=en-US`).then((response) => {
+    axios.get(`${baseUrl}/movie/${movieId}?api_key=${API_KEY}&language=en-US`).then((response) => {
       setMovies(response.data)
     }).catch(err => {
       console.log(err);
     })
 
-    axios.get(`https://api.themoviedb.org/3/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`).then((response) => {
+    axios.get(`${baseUrl}/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`).then((response) => {
       setSimilarmovies(response.data.results)
     }).catch(err => {
       console.log(err);
     })
     
-    axios.get(`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${API_KEY}&language=en-US`).then((response) => {
+    axios.get(`${baseUrl}/movie/${movieId}/credits?api_key=${API_KEY}&language=en-US`).then((response) => {
       setCredits(response.data.cast.slice(0, 4))
     }).catch(err => {
       console.log(err);

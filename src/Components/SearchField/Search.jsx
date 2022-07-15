@@ -2,7 +2,7 @@ import React, { useState} from 'react'
 import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { API_KEY } from '../../Constants/constants'
+import { API_KEY,baseUrl } from '../../Constants/constants'
 import './Search.css'
 import List from '../MovieList/List'
 import Home from '../Home/Home'
@@ -14,7 +14,7 @@ const Search = () => {
 
     const handleClick = () => {
         setClick(true);
-        axios.get(`https://api.themoviedb.org/3/search/movie?query=${searchParam}&api_key=${API_KEY}`).then((response) => {
+        axios.get(`${baseUrl}/search/movie?query=${searchParam}&api_key=${API_KEY}`).then((response) => {
             setMovies(response.data.results)
         }).catch(err => {
             console.log(err);

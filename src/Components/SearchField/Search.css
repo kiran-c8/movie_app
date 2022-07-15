@@ -21,9 +21,9 @@
     color: rgb(205, 205, 205);
     margin-right: 0.5rem;
 }
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
     .search-field{
         margin-right: 2.5%;
         width: 95%;
     }
-}
+} */
