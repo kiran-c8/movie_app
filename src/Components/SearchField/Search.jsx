@@ -1,15 +1,15 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { API_KEY,baseUrl } from '../../Constants/constants'
+import { API_KEY, baseUrl } from '../../Constants/constants'
 import './Search.css'
 import List from '../MovieList/List'
 import Home from '../Home/Home'
 const Search = () => {
     const [searchParam, setSearchParam] = useState('');
     const [movies, setMovies] = useState([]);
-    const [click,setClick] = useState(false);
+    const [click, setClick] = useState(false);
 
 
     const handleClick = () => {
@@ -23,13 +23,15 @@ const Search = () => {
 
     return (
         <>
-        
-            <div className="search-field">
-                <input type='text' placeholder='Search Movie' className='input' onChange={(e) => setSearchParam(e.target.value)} />
-                <FontAwesomeIcon icon={faSearch} className='search-icon fa-lg' onClick={handleClick} />
+
+            <div className="search-container">
+                <div className="search-field">
+                    <input type='text' placeholder='Search Movie' className='input' onChange={(e) => setSearchParam(e.target.value)} />
+                    <FontAwesomeIcon icon={faSearch} className='search-icon fa-lg' onClick={handleClick} />
+                </div>
             </div>
-                
-            {click===false ? <Home/>:<List data={movies} /> }
+
+            {click === false ? <Home /> : <List data={movies} />}
 
         </>
     )

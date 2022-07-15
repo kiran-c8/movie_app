@@ -7,7 +7,6 @@ import Loader from '../Loader/Loader'
 const Video = () => {
 
     const movieId = new URLSearchParams(useLocation().search).get('movieId');
-    // const [movie,setMovies]=useState();
     const [urlid, setUrlid] = useState('');
     useEffect(() => {
         axios.get(`${baseUrl}/movie/${movieId}/videos?api_key=${API_KEY}&language=en-US`).then((response) => {
@@ -23,7 +22,6 @@ const Video = () => {
             urlid!==''?(
                 <div className='video-wrapper'>
                 <div className="youtube-container">
-                    {/* <YouTube className='youtube' opts={opts} videoId={urlid.key} /> */}
                     <iframe title="trailer" id="ytplayer" type="text/html" width="100%" height="100%"
                         src={`https://www.youtube.com/embed/${urlid.key}?autoplay=1`}
                         frameborder="0"></iframe>

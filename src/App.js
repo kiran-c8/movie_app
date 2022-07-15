@@ -6,8 +6,8 @@ import Video from './Components/Video/Video';
 import Search from './Components/SearchField/Search';
 
 function App() {
+
   return (
-    <>
       <div className="App">
         <BrowserRouter>
         <Navbar />
@@ -18,7 +18,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-    </>
+    
   );
 }
 
