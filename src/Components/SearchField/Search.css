@@ -1,9 +1,10 @@
-.search-container{
+.search-container {
     display: flex;
     align-items: center;
     width: 100%;
 }
-.search-field{
+
+.search-field {
     width: 25%;
     height: 40px;
     display: flex;
@@ -14,36 +15,40 @@
     border: 1px solid rgb(205, 205, 205);
     border-radius: 20px;
 }
-.input{
+
+.input {
     margin-left: 2.5%;
     width: 86%;
-    background:transparent;
+    background: transparent;
     outline: none;
     border: none;
     color: #fff;
 }
-.search-icon{
+
+.search-icon {
     cursor: pointer;
     color: rgb(205, 205, 205);
 }
+
 @media screen and (max-width:1200px) {
-    .search-field{
+    .search-field {
         width: 35%;
     }
 }
 
 @media screen and (max-width:800px) {
-    .search-field{
+    .search-field {
         width: 40%;
     }
 }
 
 @media screen and (max-width:600px) {
-    .search-field{
+    .search-field {
         width: 100%;
         margin-right: 2.5%;
     }
-    .input{
+
+    .input {
         width: 90%;
     }
 }

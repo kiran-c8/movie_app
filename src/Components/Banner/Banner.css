@@ -40,7 +40,6 @@
     color: #fff;
     margin-top: 20px;
     text-transform: capitalize;
-
 }
 
 .movie-description {
@@ -64,13 +63,13 @@
     display: none;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     .poster {
         width: 1200px;
     }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
     .carousel-container {
         height: 350px;
     }
@@ -98,7 +97,6 @@
         color: #fff;
         margin-top: 10px;
         text-transform: capitalize;
-
     }
 
     .movie-description {
@@ -115,7 +113,7 @@
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
     .carousel-container {
         height: 300px;
     }
@@ -139,7 +137,6 @@
         font-size: 12px;
         padding-left: 10px;
         margin-top: 10px;
-
     }
 
     .movie-description {
@@ -155,7 +152,7 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .carousel-container {
         height: 250px;
     }
@@ -179,7 +176,6 @@
         font-size: 12px;
         padding-left: 10px;
         margin-top: 10px;
-
     }
 
     .movie-description {
@@ -195,7 +191,7 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
     .poster {
         width: 400px;
     }

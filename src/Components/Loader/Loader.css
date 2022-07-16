@@ -1,8 +1,8 @@
-.loader{
-    background-color: #1a1a1a;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: none;
+.loader {
+  background-color: #1a1a1a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: none;
 }

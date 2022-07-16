@@ -1,7 +1,7 @@
 .NavbarItems {
     display: flex;
     align-items: center;
-    border-bottom:0.1px solid rgba(140, 140, 140, 0.3);
+    border-bottom: 0.1px solid rgba(140, 140, 140, 0.3);
     height: 60px;
     font-size: 1.2rem;
 }

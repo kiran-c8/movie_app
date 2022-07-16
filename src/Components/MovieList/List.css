@@ -1,4 +1,4 @@
-.movie-list{
+.movie-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -7,17 +7,20 @@
     margin-top: 20px;
     min-height: 81.5vh;
 }
-.search-card{
+
+.search-card {
     cursor: pointer;
     margin: 10px;
     width: 190px;
     height: 250px;
     border-radius: 10px;
 }
-.movie-list-image{
+
+.movie-list-image {
     position: relative;
 }
-.movie-list-image-overlay{
+
+.movie-list-image-overlay {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +28,7 @@
     cursor: pointer;
     width: 190px;
     height: 250px;
-    top:0;
+    top: 0;
     left: 0;
     margin: 10px;
     border-radius: 10px;
@@ -34,14 +37,16 @@
     opacity: 0;
     transition: opacity 0.25s;
 }
-.movie-list-image-overlay > *{
+
+.movie-list-image-overlay>* {
     transform: translateY(20px);
     transition: transform 0.25s;
 }
-.movie-list-image-overlay:hover{
+
+.movie-list-image-overlay:hover {
     opacity: 1;
 }
 
-.movie-list-image-overlay:hover > *{
+.movie-list-image-overlay:hover>* {
     transform: translateY(0);
 }
