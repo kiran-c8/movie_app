@@ -3,7 +3,8 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { trending } from '../../Constants/urls'
 import { imageUrl } from '../../Constants/constants'
-import Marquee from "react-fast-marquee";
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 import './Banner.css'
 function Banner() {
 
@@ -25,7 +26,16 @@ function Banner() {
 
             <div className='carousel-container'>
                 <div className='carousel-wrapper'>
-                    <Marquee play={true} pauseOnHover speed={100} gradient={false}>
+                    {/* <Marquee play={true} pauseOnHover speed={100} gradient={false}> */}
+                    <AliceCarousel 
+                       autoPlay 
+                       autoPlayInterval={1800} 
+                       animationDuration={1500}
+                       disableButtonsControls
+                       disableDotsControls
+                       infinite
+                       disableSlideInfo 
+                       mouseTracking>
                         {
                             movies.map((movie) => {
                                 return (
@@ -43,7 +53,8 @@ function Banner() {
                                 )
                             })
                         }
-                    </Marquee>
+                        </AliceCarousel>
+                    {/* </Marquee> */}
 
                 </div>
             </div>
