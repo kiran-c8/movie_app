@@ -2,7 +2,7 @@
 
 Responsive React Movies App With TMDB API
 
-## Hosted Link
+## Demo
 
 https://movieebuff.netlify.app/
 
