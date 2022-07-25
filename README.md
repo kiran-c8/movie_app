@@ -2,18 +2,18 @@
 
 Responsive React Movies App With TMDB API
 
-## Demo
+## DEMO
 
 https://movieebuff.netlify.app/
 
-## Features
+## FEATURES
 
 - Search movie using api
 - Show movie details
 - Show Similar movies
 - Watch Trailer
 
-## Preview
+## PREVIEW
 
 ![Home](https://user-images.githubusercontent.com/93603167/179352182-7ce333f2-e455-4b7a-9521-1c8820930461.png)
 
@@ -28,7 +28,7 @@ https://movieebuff.netlify.app/
 
 
 
-## Get Started
+## GETTING STARTED
 
 - npm install
 - npm start
