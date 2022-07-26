@@ -13,6 +13,10 @@ https://movieebuff.netlify.app/
 - Show Similar movies
 - Watch Trailer
 
+## TECH
+
+Technologies used: HTML, CSS , JavaScript ,Reactjs
+
 ## PREVIEW
 
 ![Home](https://user-images.githubusercontent.com/93603167/179352182-7ce333f2-e455-4b7a-9521-1c8820930461.png)
